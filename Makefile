@@ -10,3 +10,10 @@ deps: $(PIP)
 
 
 .PHONY: env deps
+
+
+migrations:
+	env/bin/python manage.py makemigrations
+
+migrate:
+	env/bin/python manage.py migrate
